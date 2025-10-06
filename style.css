@@ -560,3 +560,52 @@ button:hover {
   border-top: 2px solid #333; /* makes a straight dark line */
   width: 80%;                /* how wide the line should be */    
 }
+/* Terminal box */
+.terminal-box {
+  background: #111;
+  color: #eee;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  margin: 1.5rem auto;
+  max-width: 200px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.terminal-header {
+  background: #333;
+  padding: 0.4rem;
+  display: flex;
+  gap: 6px;
+  max-width: 200px;
+}
+
+.terminal-header .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.terminal-header .red { background: #ff5f56; }
+.terminal-header .yellow { background: #ffbd2e; }
+.terminal-header .green { background: #27c93f; }
+
+.terminal-body {
+  padding: 1rem;
+  max-width: 200px;
+}
+
+.prompt {
+  color: #6b8f6b; /* matches your accent green */
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

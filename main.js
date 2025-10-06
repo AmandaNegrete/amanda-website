@@ -127,3 +127,45 @@ if (resumeToggle && resumeViewer) {
     resumeToggle.textContent = open ? 'Hide inline' : 'View inline';
   });
 }
+const textArray = [
+  "Hello, welcome to my portfolio!",
+  "Type 'resume' to view my CV.",
+  "Type 'projects' to see my work.",
+  "Type 'contact' to get in touch."
+];
+
+let i = 0;
+let j = 0;
+let currentText = "";
+let isDeleting = false;
+const speed = 80;
+const typedText = document.getElementById("typed-text");
+
+function type() {
+  if (i < textArray.length) {
+    if (!isDeleting && j <= textArray[i].length) {
+      currentText = textArray[i].substring(0, j++);
+    } else if (isDeleting && j >= 0) {
+      currentText = textArray[i].substring(0, j--);
+    }
+
+    typedText.textContent = currentText;
+
+    let typingSpeed = isDeleting ? speed / 2 : speed;
+
+    if (!isDeleting && j === textArray[i].length) {
+      typingSpeed = 2000; // pause at end
+      isDeleting = true;
+    } else if (isDeleting && j === 0) {
+      isDeleting = false;
+      i++;
+      typingSpeed = 500;
+    }
+
+    if (i === textArray.length) i = 0; // loop back
+
+    setTimeout(type, typingSpeed);
+  }
+}
+
+type();
