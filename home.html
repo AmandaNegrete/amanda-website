@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <title>Amanda Negrete — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,59 +12,95 @@
   <nav>
     <a href="home.html" class="logo">Amanda Negrete</a>
     <ul>
-      <li><a href="home.html">Home</a></li>
+      <li><a href="home.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
-  <!-- theme toggle removed -->
     </ul>
   </nav>
 
+  <!-- Hero Section -->
   <section class="main">
     <div class="intro">
       <div class="intro-text">
-        <h2 class="name">Amanda Negrete</h2>
-        <p class="role"><p class="role">Game Developer • Software Engineer • Student</p>
-        <a href="26_Negrete_Resume.docx" download class="button download-btn">Download Resume (PDF)</a>
+        <h1 class="name">.  Amanda Negrete</h1>
+        <p class="role">Game Developer • Software Engineer • UMBC Graduate</p>
+        <p class="intro-blurb">Building immersive 3D gameplay experiences, dynamic level generation systems, and interactive tools.</p>
+        
+        <div class="hero-cta">
+          <a href="26_Negrete_Resume.docx" download class="button download-btn">Download Resume</a>
+        </div>
       </div>
       <div class="headshot">
-        <img src="headshot2.jpeg" alt="Amanda headshot">
+        <img src="headshot2.jpeg" alt="Amanda Negrete graduation photo">
       </div>
     </div>
   </section>
 
-  <!-- Featured projects preview -->
+  <!-- Developer Terminal Interactive Widget -->
+  <section class="terminal-section">
+    <div class="terminal-box">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">developer_profile.sh</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="prompt">amanda@dev:~$</span> cat skills.json</p>
+        <p class="terminal-output">{ "engines": ["Unity", "Unreal Engine"], "languages": ["C#", "C++", "JavaScript, Python"], "tools": ["Git", "JIRA", "Premiere Pro"] }</p>
+        <p><span class="prompt">amanda@dev:~$</span> <span class="cursor">_</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlight Gallery -->
+  <section class="gallery-section">
+    <h3>Highlights & Events</h3>
+    <div class="gallery-wrap">
+      <div class="gallery-item">
+        <img src="grad_photo.jpeg" alt="Amanda Graduation">
+        <span class="caption">UMBC Graduation</span>
+      </div>
+      <div class="gallery-item">
+        <img src="urcad_team.jpeg" alt="URCAD 30 Event Team">
+        <span class="caption">Presenting at URCAD 30</span>
+      </div>
+      <div class="gallery-item">
+        <img src="mousehouse_setup.jpeg" alt="MouseHouse Game Demo Setup">
+        <span class="caption">MouseHouse Live Demo</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Preview -->
   <section class="projects-preview">
-    <h3>Some of My Work! </h3>
+    <h3>Featured Projects</h3>
     <div class="projects-grid">
       <article class="project-card">
-        <img src="proj2.png" alt="Project 1">
-        <h3>Tola's Room CoLab</h3>
+        <img src="slide4.png" alt="Retriever Routes app screenshot">
+        <h3>Retriever Routes</h3>
+        <p>Interactive campus navigation app developed using Leaflet mapping and SCRUM.</p>
         <div class="project-links">
-          <a href="portfolio.html">Details</a>
+          <a href="portfolio.html">Learn More</a>
         </div>
       </article>
+
       <article class="project-card">
-        <img src="slide4.png" alt="Project 2">
-        <h3>Retriever Routes </h3>
+        <img src="proj11.png" alt="MouseHouse gameplay screenshot">
+        <h3>MouseHouse</h3>
+        <p>Unity-based 3D first-person exploration game with radial threat behavior systems.</p>
         <div class="project-links">
-          <a href="portfolio.html">Details</a>
-        </div>
-      </article>
-      <article class="project-card">
-        <img src="proj11.png" alt="Project 3">
-        <h3>"MouseHouse: A Unity Based First Person Game"</h3>
-        <div class="project-links">
-          <a href="portfolio.html">Details</a>
+          <a href="portfolio.html">Learn More</a>
         </div>
       </article>
     </div>
   </section>
 
-  <script src="carousel.js"></script>
   <footer class="site-footer">
-    <small>© Amanda Negrete — Game Developer • <a href="https://github.com/AmandaNegrete" target="_blank" rel="noopener noreferrer">GitHub</a> •  <a href="https://www.linkedin.com/in/amanda-negrete-74609b299/" target="_blank" rel="noopener noreferrer">LinkedIn</a> •
+    <small>© Amanda Negrete — Game Developer • <a href="https://github.com/AmandaNegrete" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/amanda-negrete-74609b299/" target="_blank" rel="noopener noreferrer">LinkedIn</a></small>
   </footer>
+
   <div class="fake-cursor" aria-hidden="true"></div>
   <script src="main.js"></script>
 </body>

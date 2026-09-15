@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_port.css">
 </head>
 <body>
   <nav>
@@ -17,64 +17,79 @@
     </ul>
   </nav>
 
-  <section class="page-content">
-    <h1>My Work</h1>
-    
-    <!-- Projects Grid -->
-    <section class="projects-grid">
-      <article class="project-card">
-        <img src="proj2.png" alt="Project 1 screenshot">
-        <h3>Tola's Room CoLab</h3>
-        <p>I worked with a team of skilled mentors and peers to collaborate with a local Puerto Rican Art Museum located in Baltimore, Maryland to create a virtual tour of the space while immersing ourselves into the history behind the Puerto Rican diaspora.<br> <br> 
-        We worked with Premiere Pro and Editing Software to create a 360 degree video tour of the space. </p>
-           <div class="project-links">
-          <a href="https://www.tolasroom.com/book-online">Visit</a>
+  <main class="page-content">
+    <header class="portfolio-header">
+      <h1>My Work</h1>
+    </header>
+
+    <!-- Vertical Scrolling Feed -->
+    <section class="projects-feed">
+      
+      <article class="project-strip">
+        <div class="project-media">
+          <img src="proj2.png" alt="Tola's Room CoLab virtual tour screenshot">
         </div>
+        <div class="project-details">
+          <h3>Tola's Room CoLab</h3>
+          <p>Collaborated with mentors and peers in partnership with a local Puerto Rican Art Museum in Baltimore, Maryland, to design an immersive virtual tour highlighting the history of the Puerto Rican diaspora.</p>
+          <p>Utilized Premiere Pro and advanced editing software to capture and produce an interactive 360-degree video tour of the museum space.</p>
+          <div class="project-links">
+            <a href="https://www.tolasroom.com/book-online" target="_blank" rel="noopener noreferrer">Visit Project</a>
+          </div>
         </div>
       </article>
 
-      <article class="project-card">
-        <img src="slide4.png" alt="Project 3 screenshot">
-        <h3>Retriever Routes</h3>
-        <p>Retriever Routes is a UMBC oriented navigation application website! The website features implementation of the Leaflet routing machine and Leaflet 
-          mapping system to create an interactive campus map. <br> 
-           <br> 
-          The process was a collaborative one as we implemented the SCRUM methodology and JIRA board application to organize
-          and complete the project, SRS documentation,and Sprint Reports within 3 months!
-        </p>
-        <div class="project-links">
-          <a href="https://lynasberaich.github.io/retriever-routes/">Visit</a>
+      <article class="project-strip">
+        <div class="project-media">
+          <img src="slide4.png" alt="Retriever Routes interactive map screenshot">
+        </div>
+        <div class="project-details">
+          <h3>Retriever Routes</h3>
+          <p>An interactive campus navigation app tailored for UMBC. Built using the Leaflet Mapping System and Leaflet Routing Machine to provide real-time, user-friendly directional routing across campus.</p>
+          <p>Engineered within a 3-month timeline using Agile/SCRUM methodologies, managing deliverables via JIRA while authoring comprehensive SRS documentation and sprint reports.</p>
+          <div class="project-links">
+            <a href="https://lynasberaich.github.io/retriever-routes/" target="_blank" rel="noopener noreferrer">Visit Project</a>
+          </div>
         </div>
       </article>
 
-      <article class="project-card">
-        <img src="proj11.png" alt="Project 1 screenshot">
-  <div class="badge-container"><span class="pixel-badge">NEW</span></div>
-        <h3>MouseHouse</h3>
-        <p>Developed gameplay mechanics in Unity using C#, implementing enemy interactions, player health systems, and radial threat behaviors within a first-person exploration environment.</p>
-        <p> I Collaborated in a team-based game development project, contributing to gameplay systems, environment design, and debugging while coordinating with programmers and artists to deliver a functional prototype
-        </p>
-        <div class="project-links">
+      <article class="project-strip">
+        <div class="project-media">
+          <div class="badge-container"><span class="pixel-badge">NEW</span></div>
+          <img src="proj11.png" alt="MouseHouse game screenshot">
+        </div>
+        <div class="project-details">
+          <h3>MouseHouse</h3>
+          <p>A first-person exploration game developed in Unity (C#) featuring dynamic enemy interactions, custom player health systems, and radial threat detection behaviors.</p>
+          <p>Collaborated across multidisciplinary teams of programmers and artists to architect core gameplay logic, build interactive environment mechanics, and ship a fully functional prototype.</p>
+          <div class="project-links">
+            <a href="https://github.com/AmandaNegrete/MouseHouse" target="_blank" rel="noopener noreferrer">Visit Project</a>
+          </div>
         </div>
       </article>
 
-      <article class="project-card">
-        <img src="image.png" alt="Project 1 screenshot">
-  <div class="badge-container"><span class="pixel-badge">NEW</span></div>
-        <h3>First Person Procedural Level Generator</h3>
-        <p>Developed a procedural dungeon generation game system that dynamically creates varied dungeon maze layouts for a first-person dungeon crawler game.
-          Utilizing Unreal Engine’s C++ Scripts to implement algorithms for level generation writing over 500 lines of code.
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/AmandaNegrete/ProceduralDungeon">Visit</a>
+      <article class="project-strip">
+        <div class="project-media">
+          <div class="badge-container"><span class="pixel-badge">NEW</span></div>
+          <img src="image.png" alt="Procedural Level Generator screenshot">
+        </div>
+        <div class="project-details">
+          <h3>First Person Procedural Level Generator</h3>
+          <p>A procedural dungeon generation system designed for first-person dungeon crawlers, dynamically rendering complex maze layouts and unique play spaces every run.</p>
+          <p>Engineered entirely in Unreal Engine using custom C++ algorithms (500+ lines of code) to control dungeon geometry, branching logic, and layout seed generation.</p>
+          <div class="project-links">
+            <a href="https://github.com/AmandaNegrete/ProceduralDungeon" target="_blank" rel="noopener noreferrer">Visit Project</a>
+          </div>
         </div>
       </article>
 
     </section>
-  </section>
+  </main>
+
   <footer class="site-footer">
-    <small>© Amanda Negrete — Game Developer • <a href="https://github.com/AmandaNegrete" target="_blank" rel="noopener noreferrer">GitHub</a> •  <a href="https://www.linkedin.com/in/amanda-negrete-74609b299/" target="_blank" rel="noopener noreferrer">LinkedIn</a> •
+    <small>© Amanda Negrete — Game Developer • <a href="https://github.com/AmandaNegrete" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/amanda-negrete-74609b299/" target="_blank" rel="noopener noreferrer">LinkedIn</a></small>
   </footer>
+
   <div class="fake-cursor" aria-hidden="true"></div>
   <script src="main.js"></script>
 </body>
